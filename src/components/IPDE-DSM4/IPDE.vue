@@ -1,32 +1,48 @@
 <script setup>
-import categorias from './categorias.ts';
-import respuestas from './respuestas-jess.ts';
-import { computed } from 'vue';
+import Cuestionario from './Cuestionario.vue';
+import Resultados from './Resultados.vue';
+import { ref } from 'vue';
 
-const puntajesPorCategoria = computed(() => {
-  return categorias.map(categoria => {
-    const total = categoria.puntos.reduce((acum, punto) => {
-      const respuestaUsuario = respuestas[punto.id]
-      const respuestaEsperada = punto.respuesta
-      if (respuestaUsuario === respuestaEsperada) {
-        acum += 1
-      }
-      return acum
-    }, 0)
+const completando = ref(true);
+const respuestas = ref([]);
 
-    return {
-      nombre: categoria.nombre,
-      total
-    }
-  })
-})
-
+const handleSubmit = (respuestasPersona) => {
+  console.log(respuestasPersona);
+  respuestas.value = respuestasPersona;
+  completando.value = false;
+}
 </script>
 
 <template>
-    <h1>IPDE</h1>
-    <div v-for="puntajePorCategoria in puntajesPorCategoria">
-        <h2>{{ puntajePorCategoria.nombre }}</h2>
-        <p>{{ puntajePorCategoria.total }}</p>
+    <div class="background">
+        <div class="wrapper">
+            <h1>IPDE Módulo DSM IV</h1>
+            <Cuestionario v-if="completando" :handleSubmit="handleSubmit" />
+            <Resultados v-else :respuestas="respuestas" />
+        </div>
     </div>
 </template>
+
+<style scoped>
+.background {
+    --gradiente: linear-gradient(133deg,rgba(167, 242, 221, 1) 0%, rgba(177, 146, 240, 1) 50%, rgba(245, 149, 199, 1) 100%);
+
+    background: var(--gradiente);
+    box-sizing: border-box;
+    color: #25086c;
+    height: 100vh;
+    padding: 32px;
+}
+
+.wrapper {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-sizing: border-box;
+    height: calc(100vh - 64px);
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 32px;
+}
+</style>

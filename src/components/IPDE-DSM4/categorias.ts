@@ -1,6 +1,7 @@
 const categorias = [
     {
         nombre: "Paranoide",
+        descripcion: "Patrón caracterizado por desconfianza y suspicacia generalizada hacia los demás, interpretando sus motivos como malintencionados o amenazantes.",
         puntos: [
             { id: "2", respuesta: false },
             { id: "14", respuesta: false },
@@ -13,6 +14,7 @@ const categorias = [
     },
     {
         nombre: "Esquizoide",
+        descripcion: "Patrón de desapego en las relaciones sociales y restricción en la expresión emocional. Predomina la distancia afectiva y la preferencia por actividades solitarias.",
         puntos: [
             { id: "1", respuesta: false },
             { id: "12", respuesta: true },
@@ -25,6 +27,7 @@ const categorias = [
     },
     {
         nombre: "Esquizotípico",
+        descripcion: "Patrón de malestar intenso en relaciones cercanas, distorsiones cognitivas o perceptivas y comportamientos excéntricos. Puede incluir pensamiento mágico o creencias inusuales.",
         puntos: [
             { id: "2", respuesta: false },
             { id: "24", respuesta: true },
@@ -39,6 +42,7 @@ const categorias = [
     },
     {
         nombre: "Histriónico",
+        descripcion: "Patrón de emotividad excesiva y búsqueda de atención. Se caracteriza por dramatización, necesidad de aprobación y expresividad afectiva intensa.",
         puntos: [
             { id: "5", respuesta: true },
             { id: "10", respuesta: true },
@@ -52,6 +56,7 @@ const categorias = [
     },
     {
         nombre: "Antisocial",
+        descripcion: "Patrón persistente de desprecio y violación de los derechos de los demás, impulsividad y dificultad para ajustarse a normas sociales.",
         puntos: [
             { id: "11", respuesta: false },
             { id: "18", respuesta: false },
@@ -64,6 +69,7 @@ const categorias = [
     },
     {
         nombre: "Narcisista",
+        descripcion: "Patrón de grandiosidad, necesidad de admiración y falta de empatía, con una autoevaluación que puede fluctuar entre la omnipotencia y la fragilidad.",
         puntos: [
             { id: "7", respuesta: false },
             { id: "9", respuesta: true },
@@ -78,6 +84,7 @@ const categorias = [
     },
     {
         nombre: "Límite",
+        descripcion: "Patrón de inestabilidad en las relaciones interpersonales, la autoimagen y el afecto, con impulsividad marcada y temor al abandono.",
         puntos: [
             { id: "4", respuesta: true },
             { id: "8", respuesta: true },
@@ -92,6 +99,7 @@ const categorias = [
     },
     {
         nombre: "Obsesivo Compulsivo",
+        descripcion: "Patrón de preocupación por el orden, el perfeccionismo y el control mental e interpersonal, que puede interferir con la flexibilidad y la eficiencia.",
         puntos: [
             { id: "3", respuesta: false },
             { id: "19", respuesta: true },
@@ -105,6 +113,7 @@ const categorias = [
     },
     {
         nombre: "Dependencia",
+        descripcion: "Patrón de necesidad excesiva de ser cuidado, sumisión y miedo a la separación. Se manifiesta en dificultad para tomar decisiones sin apoyo o guía",
         puntos: [
             { id: "6", respuesta: true },
             { id: "33", respuesta: true },
@@ -118,6 +127,7 @@ const categorias = [
     },
     {
         nombre: "Evitación",
+        descripcion: "Patrón de inhibición social, sentimientos de ineptitud y sensibilidad extrema a la evaluación negativa. Se evita la exposición por miedo al rechazo o a la humillación.",
         puntos: [
             { id: "16", respuesta: true },
             { id: "27", respuesta: true },
