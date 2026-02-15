@@ -25,6 +25,13 @@ const chartData = computed(() => {
         label: "Valor",
         data: props.totales.map((total) => total.tNormalizado),
         borderColor: "rgb(75, 192, 192)",
+      },
+      {
+        label: "Valor de referencia",
+        data: props.totales.map(() => 63),
+        borderColor: "rgb(255, 99, 132)",
+        borderWidth: 2,
+        borderDash: [6, 6],
       }
     ]
   }
