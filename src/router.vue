@@ -2,6 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import SCL90R from '@/components/SCL-90R/SCL90R.vue';
 import IPDE from '@/components/IPDE-DSM4/IPDE.vue';
+import OEQII from './components/OEQ-II/OEQII.vue';
 import Home from '@/components/Home.vue';
 
 const router = createRouter({
@@ -10,6 +11,7 @@ const router = createRouter({
     { path: '/', name: 'Home', component: Home },
     { path: '/IPDE', name: 'IPDE', component: IPDE },
     { path: '/SCL-90R', name: 'SCL-90R', component: SCL90R },
+    { path: '/OEQ-II', name: 'OEQ-II', component: OEQII },
   ]
 });
 

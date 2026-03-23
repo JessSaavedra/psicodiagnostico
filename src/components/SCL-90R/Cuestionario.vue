@@ -81,11 +81,11 @@ ha preocupado o molestado durante la última semana (7 días).</p>
         <div class="opciones">
           <div class="radio-wrapper-11">
             <label v-for="(label, value) in {
-              0: 'Nada',
-              1: 'Muy poco',
-              2: 'Poco',
+              0: 'No',
+              1: 'No mucho',
+              2: 'Algo',
               3: 'Bastante',
-              4: 'Mucho'
+              4: 'Muchísimo'
             }" :key="value" class="radio-wrapper-11">
               {{ label }}
               <input

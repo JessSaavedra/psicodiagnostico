@@ -13,13 +13,15 @@ const handleSubmit = (respuestasPersona) => {
 </script>
 
 <template>
-    <div class="background">
-        <div class="wrapper">
-            <h1>IPDE Módulo DSM IV</h1>
-            <Cuestionario v-if="completando" :handleSubmit="handleSubmit" />
-            <Resultados v-else :respuestas="respuestas" />
+    <main>
+        <div class="background">
+            <div class="wrapper">
+                <h1>Cuestionario OEQ-II</h1>
+                <Cuestionario v-if="completando" :handleSubmit="handleSubmit" />
+                <Resultados v-else :respuestas="respuestas" />
+            </div>
         </div>
-    </div>
+    </main>
 </template>
 
 <style scoped>

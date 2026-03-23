@@ -9,6 +9,11 @@ const tests = [
         nombre: "SCL-90R",
         href: "SCL-90R",
         descripcion: "El objetivo del SCL-90R (Cuestionario de 90 Síntomas-Revisado) es evaluar una amplia gama de síntomas psicológicos y psicopatológicos en adultos y adolescentes para medir su intensidad.\n\nFue diseñado para ser utilizado por profesionales de la salud mental en la evaluación inicial de pacientes, para medir el progreso durante un tratamiento, y para la investigación clínica, incluyendo estudios de ensayos clínicos para medir cambios en síntomas como depresión y ansiedad."
+    },
+    {
+        nombre: "OEQ-II",
+        href: "OEQ-II",
+        descripcion: "Overexcitability Questionnaire-II, utilizado para medir la sobreexcitabilidad (intelectual, emocional, sensorial, imaginativa o psicomotora) basada en la teoría de la desintegración positiva de Dabrowski."
     }
 ]
 </script>
