@@ -14,6 +14,11 @@ const tests = [
         nombre: "OEQ-II",
         href: "OEQ-II",
         descripcion: "Overexcitability Questionnaire-II, utilizado para medir la sobreexcitabilidad (intelectual, emocional, sensorial, imaginativa o psicomotora) basada en la teoría de la desintegración positiva de Dabrowski."
+    },
+    {
+        nombre: "Perfil Sensorial",
+        href: "Perfil-Sensorial",
+        descripcion: "El Perfil Sensorial para Adolescentes y Adultos (Brown y Dunn, 2002) es un autoinforme diseñado para personas de 11 años en adelante, utilizado para evaluar cómo los estímulos del entorno (visuales, auditivos, táctiles, olfativos, propioceptivos) afectan la vida diaria y el desempeño ocupacional. Nota: implementado temporalmente solo 18-64 años."
     }
 ]
 </script>
